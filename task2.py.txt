@@ -1,0 +1,28 @@
+def word_count(text):
+    """
+    Counts the number of words in the given text.
+
+    Args:
+        text (str): The input sentence or paragraph.
+
+    Returns:
+        int: The total number of words.
+    """
+    # Split the text into words using spaces as separators
+    words = text.split()
+
+    # Return the count of words
+    return len(words)
+
+def main():
+    # Prompt the user for input
+    user_input = input("Enter a sentence or paragraph: ")
+
+    # Calculate the word count
+    count = word_count(user_input)
+
+    # Display the result
+    print(f"Word count: {count}")
+
+if __name__ == "__main__":
+    main()
